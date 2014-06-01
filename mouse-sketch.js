@@ -11,8 +11,17 @@ $(document).ready(function(){
 	assign_event('input[name=new-sketchpad-click]', 1);
 	assign_event('input[name=new-sketchpad-random]', 2);
 	assign_event('input[name=new-sketchpad-layered]', 3);
-	
 
+	//assigning prompt for button
+	$('input[name=new-sketchpad-click]').click(function(){
+		do{
+			//prompt user for new size
+			pixels = prompt("What size of sketchpad? (4 = 4x4)");
+		}while(!$.isNumeric(pixels) || (pixels <= 0))
+			setup_grid('.sketch-container', pixels);	//setup new grid
+			//setup_hover();
+			setup_event(1);
+	});
 });
 
 function assign_event(selector, event){
