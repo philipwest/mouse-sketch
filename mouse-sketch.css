@@ -7,6 +7,19 @@
 		    vertical-align: top;
 }
 
+.cf:before,
+.cf:after{
+	content: "";
+	display: table;
+}
+.cf:after{
+	clear: both;
+
+}
+.cf{
+	zoom: 1;
+}
+
 .sketch-container{
 	-webkit-box-sizing: content-box;
 	   -moz-box-sizing: content-box;
@@ -15,8 +28,7 @@
 	width: 600px;
 }
 
-.sketch-container,
-.pixel{
+.sketch-container{
 	border: 1px solid #eee;
 }
 
