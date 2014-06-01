@@ -5,12 +5,17 @@
 	<title>Mouse Sketch</title>
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="./grid.js"></script>
 	<script type="text/javascript" src="./mouse-sketch.js"></script>
 
 	<link type="text/css" rel="stylesheet" href="./mouse-sketch.css">
 </head>
 <body>
-	<input type="button" name="new-sketchpad" value="New Sketch Pad">
-	<div class="sketch-container"></div>
+	<div class="controls">
+		<input type="button" name="new-sketchpad" value="Trailing Sketch Pad">
+		<input type="button" name="new-sketchpad-random" value="Random Colour Sketch Pad - Random">
+		<input type="button" name="new-sketchpad-click" value="Clickable Sketch Pad">
+	</div>
+	<div class="sketch-container cf"></div>
 </body>
 </html>
